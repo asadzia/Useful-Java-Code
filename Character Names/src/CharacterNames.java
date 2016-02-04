@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/* A hashmap can be used to shorten the program and to ameliorate efficiency */
 public class CharacterNames 
 {
 	/* the variable for string the filename */
