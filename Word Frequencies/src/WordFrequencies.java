@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/* A hashmap can be used to shorten the program and to ameliorate efficiency */
 public class WordFrequencies implements Constants {
 	/* stores the unique words from a file */
 	private ArrayList <String> myWords;
