@@ -57,6 +57,26 @@ public class LogAnalyzer
 			e.printStackTrace();
 		}
      }
+     
+     /**
+     * A method for counting the visits to a website for each IP.
+     */
+     public void countVisitsPerIP ()
+     {
+    	 for (int i = 0; i < records.size(); ++i)
+    	 {
+			 String IP = records.get(i).getIpAddress();
+			 
+    		 if (map.containsKey(IP))
+    		 {
+    			 map.put(IP, map.get(IP) + 1);
+    		 }
+    		 else
+    		 {
+    			 map.put(IP, 1);
+    		 }
+    	 }
+     }
         
      public void printAll() {
          for (LogEntry le : records) {
